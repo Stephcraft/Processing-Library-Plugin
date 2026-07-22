@@ -1,0 +1,10 @@
+.gradle
+.idea
+.kotlin
+build
+
+gradlew
+gradlew.bat
+gradle.properties
+
+desktop.ini
