@@ -6,8 +6,9 @@ import org.gradle.api.file.RegularFileProperty
 import org.gradle.api.tasks.InputFile
 import org.gradle.api.tasks.Nested
 import org.gradle.api.tasks.OutputDirectory
+import net.stephcraft.processing.library.LibraryCategory.*
 
-abstract class ProcessingLibraryExtension {
+abstract class ProcessingLibraryExtension: LibraryCategory.Import() {
 
     @get:Nested
     abstract val properties: ProcessingLibraryProperties

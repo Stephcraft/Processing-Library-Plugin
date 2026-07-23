@@ -41,9 +41,17 @@ abstract class ProcessingLibraryProperties @Inject constructor(private val objec
     @get:Input
     abstract val url: Property<String>
 
-    /** The category (or categories) of your library. */
+    /** The categories of your library. (Use category instead if single) */
     @get:Input
     abstract val categories: SetProperty<LibraryCategory>
+
+    /** The category of your library. (Use categories instead if multiple) */
+    @get:Internal
+    var category: LibraryCategory
+        get() = categories.map { it.takeIf { it.size == 1 }?.firstOrNull() }.get()
+        set(category) {
+            categories.set(setOf(category))
+        }
 
     /**
      * A short sentence (or fragment) to summarize the library's function. This will
