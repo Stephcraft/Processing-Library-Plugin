@@ -88,3 +88,6 @@ tasks {
     }
 }
 ```
+
+## Template
+<img src="https://i.imgur.com/2zh2RgN.png" height="12"/> [processing-library-example](https://github.com/Stephcraft/Processing-Library-Plugin/tree/main/processing-library-example)
