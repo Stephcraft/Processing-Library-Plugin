@@ -8,6 +8,11 @@ plugins {
     kotlin("plugin.sam.with.receiver") version "2.4.0"
     /** https://plugins.gradle.org/plugin/com.gradle.plugin-publish */
     id("com.gradle.plugin-publish") version "2.1.0"
+    /** https://plugins.gradle.org/plugin/org.jetbrains.dokka */
+    id("org.jetbrains.dokka") version "2.2.0"
+    /** https://plugins.gradle.org/plugin/org.jetbrains.dokka-javadoc */
+    id("org.jetbrains.dokka-javadoc") version "2.2.0"
+
     `java-gradle-plugin`
 }
 
