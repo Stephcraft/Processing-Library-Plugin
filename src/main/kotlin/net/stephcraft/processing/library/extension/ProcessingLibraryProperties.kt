@@ -90,8 +90,8 @@ abstract class ProcessingLibraryProperties @Inject constructor(private val objec
      * The min and max revision of Processing compatible with your library.
      * Note that these fields use the revision and not the version of Processing,
      * parsable as an int. For example, the revision number for 2.2.1 is 227.
-     * You can find the revision numbers in the change log:
-     * [revisions.md](https://raw.githubusercontent.com/processing/processing4/master/build/shared/revisions.md)
+     * You can find the revision numbers in the release tags:
+     * [Processing 4 tags](https://github.com/processing/processing4/tags)
      * Only use maxRevision (or minRevision), when your library is known to
      * break in a later (or earlier) release. Otherwise, use the default value 0.
      */
