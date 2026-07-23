@@ -42,7 +42,7 @@ jobs:
         uses: gradle/actions/setup-gradle@v6
 
       - name: Generate Dokka
-        run: ./gradlew dokkaHtml # gradle dokkaHtml
+        run: gradle dokkaHtml # ./gradlew dokkaHtml
 
         # Upload to GitHub pages
         # https://github.com/actions/upload-pages-artifact
