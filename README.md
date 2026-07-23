@@ -1,26 +1,30 @@
-# Processing Library Plugin
+# <img src="https://i.imgur.com/FK4arV7.png" height="26"/> Processing Library Plugin
 [![Processing](https://img.shields.io/static/v1?style=flat&logo=processingfoundation&label=&message=Processing&logoColor=white&labelColor=333&color=444)](https://processing.org)
 [![Gradle](https://img.shields.io/static/v1?style=flat&logo=gradle&label=&message=Gradle&logoColor=white&labelColor=333&color=444)](https://stephcraft.itch.io/pacman)
 
-## Reference
+Gradle Plugin to build Processing Libraries.
+
+## Processing Library Reference
+- [**Processing** — Libraries](https://processing.org/reference/libraries)
 - [**Processing Wiki** — Library Guidelines](https://github.com/processing/processing4/wiki/Library-Guidelines)
 - [**Processing Wiki** — `library.properties`](https://github.com/processing/processing4/wiki/Library-Basics#describing-your-library-with-libraryproperties)
 
 ## Usage
 
-### Project Layout
-```
-├─ build.gradle.kts
-├─ src/java/main
-│  └─ me.username
-│     └─ ProcessingLibrary.java
-└─ build/processingLibrary
-   └─ {LibraryName}.zip
-   └─ {LibraryName}.pdex
-   └─ {LibraryName}.txt
-```
+<img src="https://i.imgur.com/F86XfPz.png" height="12"/> **Download** <img src="https://i.imgur.com/BpJQtY7.png" height="12"/> [IntelliJ IDEA](https://www.jetbrains.com/idea)
 
-### Build Script
+### <img src="https://intellij-icons.jetbrains.design/icons/AllIcons/expui/actions/projectDirectory.svg"/> Project Layout
+<img src="https://intellij-icons.jetbrains.design/icons/AllIcons/expui/nodes/module.svg" height="14"/> **`LibraryName`**  
+├─ <img src="https://intellij-icons.jetbrains.design/icons/KotlinBaseResourcesIcons/org/jetbrains/kotlin/idea/icons/expui/kotlinGradleScript.svg" height="14"/> `build.gradle.kts`  
+├─ <img src="https://intellij-icons.jetbrains.design/icons/AllIcons/expui/nodes/sourceRoot.svg" height="14"/> `src/java/main`  
+ │‎  └─ <img src="https://intellij-icons.jetbrains.design/icons/AllIcons/expui/nodes/package.svg" height="14"/> `me.username`  
+ │‎     └─ <img src="https://intellij-icons.jetbrains.design/icons/AllIcons/expui/nodes/class.svg" height="14"/> `ProcessingLibrary.java`  
+└─ <img src="https://intellij-icons.jetbrains.design/icons/AllIcons/expui/nodes/excludeRoot.svg" height="14"/> `build/processingLibrary`  
+   ├─ <img src="https://i.imgur.com/PjruJzq.png" height="14"/> `LibraryName.pdex`  
+   ├─ <img src="https://intellij-icons.jetbrains.design/icons/AllIcons/expui/fileTypes/archive.svg" height="14"/> `LibraryName.zip`  
+   └─ <img src="https://intellij-icons.jetbrains.design/icons/AllIcons/expui/fileTypes/text.svg" height="14"/> `LibraryName.txt`  
+
+### <img src="https://intellij-icons.jetbrains.design/icons/KotlinBaseResourcesIcons/org/jetbrains/kotlin/idea/icons/expui/kotlinGradleScript.svg"/> Build Script
 `build.gradle.kts`
 ```gradle
 group = "me.username"
