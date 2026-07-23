@@ -107,8 +107,13 @@ pluginManagement {
 }
 ```
 
+### <img src="https://intellij-icons.jetbrains.design/icons/AllIcons/expui/build/taskGroup.svg"/> Tasks
+- <img src="https://intellij-icons.jetbrains.design/icons/ExternalSystemIcons/icons/newui/task.svg" height="14"/> `:generateProcessingLibrary`
+  — Generates the processing library artifacts in
+  <img src="https://intellij-icons.jetbrains.design/icons/AllIcons/expui/nodes/excludeRoot.svg" height="14"/> `build/processingLibrary`
+
 ## Documentation
-[Processing Library Plugin Documentation](https://stephcraft.github.io/Processing-Library-Plugin/processing-library-plugin/net.stephcraft.processing.library/-processing-library-properties/index.html)
+<img src="https://intellij-icons.jetbrains.design/icons/AllIcons/expui/toolwindows/documentation.svg" height="14"/> [Processing Library Plugin Documentation](https://stephcraft.github.io/Processing-Library-Plugin/processing-library-plugin/net.stephcraft.processing.library/-processing-library-properties/index.html)
 
 ## Template
 <img src="https://i.imgur.com/2zh2RgN.png" height="12"/> [processing-library-example](https://github.com/Stephcraft/Processing-Library-Plugin/tree/main/processing-library-example)
