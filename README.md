@@ -107,5 +107,8 @@ pluginManagement {
 }
 ```
 
+## Documentation
+[Processing Library Plugin Documentation](https://stephcraft.github.io/Processing-Library-Plugin/processing-library-plugin/net.stephcraft.processing.library/-processing-library-properties/index.html)
+
 ## Template
 <img src="https://i.imgur.com/2zh2RgN.png" height="12"/> [processing-library-example](https://github.com/Stephcraft/Processing-Library-Plugin/tree/main/processing-library-example)
