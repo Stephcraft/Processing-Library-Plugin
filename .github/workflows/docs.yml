@@ -1,3 +1,5 @@
+# Repository → Settings → Pages 
+# Source = GitHub Actions
 # https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax
 
 name: Deploy Dokka Docs
@@ -40,9 +42,11 @@ jobs:
         # https://github.com/gradle/actions/tree/main/setup-gradle
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v6
+        with:
+          gradle-version: '9.5'
 
       - name: Generate Dokka
-        run: gradle dokkaGenerate # ./gradlew dokkaHtml
+        run: gradle dokkaGenerate
 
         # Upload to GitHub pages
         # https://github.com/actions/upload-pages-artifact
