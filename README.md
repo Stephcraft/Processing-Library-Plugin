@@ -15,6 +15,7 @@ Gradle Plugin to build Processing Libraries.
 
 ### <img src="https://intellij-icons.jetbrains.design/icons/AllIcons/expui/actions/projectDirectory.svg"/> Project Layout
 <img src="https://intellij-icons.jetbrains.design/icons/AllIcons/expui/nodes/module.svg" height="14"/> **`LibraryName`**  
+├─ <img src="https://intellij-icons.jetbrains.design/icons/KotlinBaseResourcesIcons/org/jetbrains/kotlin/idea/icons/expui/kotlinGradleScript.svg" height="14"/> `settings.gradle.kts`  
 ├─ <img src="https://intellij-icons.jetbrains.design/icons/KotlinBaseResourcesIcons/org/jetbrains/kotlin/idea/icons/expui/kotlinGradleScript.svg" height="14"/> `build.gradle.kts`  
 ├─ <img src="https://intellij-icons.jetbrains.design/icons/AllIcons/expui/nodes/sourceRoot.svg" height="14"/> `src/java/main`  
  │‎  └─ <img src="https://intellij-icons.jetbrains.design/icons/AllIcons/expui/nodes/package.svg" height="14"/> `me.username`  
@@ -85,6 +86,23 @@ tasks {
      */
     generateProcessingLibrary {
         mustRunAfter("jar")
+    }
+}
+```
+
+`settings.gradle.kts`
+```gradle
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        maven("https://jitpack.io")
+    }
+    resolutionStrategy {
+        eachPlugin {
+            if (requested.id.toString() == "net.stephcraft.processing-library") {
+                useModule("com.github.Stephcraft:Processing-Library-Plugin:main-SNAPSHOT")
+            }
+        }
     }
 }
 ```
