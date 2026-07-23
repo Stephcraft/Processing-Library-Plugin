@@ -47,7 +47,7 @@ processingLibrary {
         /** A web page for your library, NOT a direct link to where to download it. */
         url = "https://username.github.io/libraryName"
         /** The category (or categories) of your library. */
-        categories = setOf(LibraryCategory.UTILITIES)
+        categories = DATA + IO
         /** A short sentence to summarize the library's function. (defaults to project description) */
         sentence = ""
         /** Additional information suitable for the Processing website. */
