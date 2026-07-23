@@ -3,8 +3,8 @@
 .kotlin
 build
 
-gradlew
-gradlew.bat
+# gradlew
+# gradlew.bat
 gradle.properties
 
 desktop.ini
